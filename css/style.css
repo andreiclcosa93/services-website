@@ -329,7 +329,7 @@ header {
     grid-template-columns: 1fr; } }
 
 .swiper {
-  width: 82%; }
+  width: 60%; }
   .swiper .swiper-wrapper {
     margin-bottom: 4rem; }
     .swiper .swiper-wrapper .swiper-slide {
@@ -342,16 +342,20 @@ header {
       .swiper .swiper-wrapper .swiper-slide h1, .swiper .swiper-wrapper .swiper-slide h2, .swiper .swiper-wrapper .swiper-slide h3, .swiper .swiper-wrapper .swiper-slide h4, .swiper .swiper-wrapper .swiper-slide h5 {
         color: #ffffff; }
       .swiper .swiper-wrapper .swiper-slide p {
-        margin-bottom: 1.5rem; }
+        margin-bottom: 1.5rem;
+        font-size: 1.4rem;
+        text-align: center; }
       .swiper .swiper-wrapper .swiper-slide .patient {
         display: flex;
         align-items: center;
-        gap: 1rem; }
+        gap: 1rem;
+        margin-right: 80px;
+        font-size: 2rem;
+        color: #f72585; }
         .swiper .swiper-wrapper .swiper-slide .patient .avatar {
-          width: 2.5rem;
-          aspect-ratio: 1/1;
-          border-radius: 505;
-          overflow: hidden; }
+          width: 100%;
+          height: 100%;
+          border-radius: 50%; }
   .swiper .swiper-pagination-bullet {
     background: #480ca8; }
 
