@@ -8,5 +8,13 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andreiclcosa93/services-website.git"
+  },
+  "bugs": {
+    "url": "https://github.com/andreiclcosa93/services-website/issues"
+  },
+  "homepage": "https://github.com/andreiclcosa93/services-website#readme"
 }

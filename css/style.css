@@ -196,35 +196,32 @@ header {
         margin: 0.8rem 0 1.5rem;
         line-height: 1.4; } }
 
-#services {
-  width: 100vw;
-  text-align: center; }
-  #services .container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem; }
-    #services .container article {
-      background: linear-gradient(135deg, #480ca8, #4cc9f0);
-      color: #ffffff;
-      padding: 1.5rem;
-      border-radius: 1rem;
-      display: flex;
-      gap: 1.5rem;
-      height: fit-content;
-      transition: all 400ms ease; }
-      #services .container article h1, #services .container article h2, #services .container article h3, #services .container article h4, #services .container article h5 {
-        color: #ffffff; }
-      #services .container article:hover {
-        margin-top: -0.5rem;
-        color: #f72585; }
-      #services .container article h4:hover {
-        color: #f72585; }
-      #services .container article i {
-        font-size: 2.7rem;
-        padding-bottom: 0.5rem; }
-      #services .container article div h4 {
-        margin-bottom: 1rem;
-        font-size: 2rem; }
+#services .container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem; }
+  #services .container article {
+    background: linear-gradient(135deg, #480ca8, #4cc9f0);
+    color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    display: flex;
+    gap: 1.5rem;
+    height: fit-content;
+    transition: all 400ms ease; }
+    #services .container article h1, #services .container article h2, #services .container article h3, #services .container article h4, #services .container article h5 {
+      color: #ffffff; }
+    #services .container article:hover {
+      margin-top: -0.5rem;
+      color: #f72585; }
+    #services .container article h4:hover {
+      color: #f72585; }
+    #services .container article i {
+      font-size: 2.7rem;
+      padding-bottom: 0.5rem; }
+    #services .container article div h4 {
+      margin-bottom: 1rem;
+      font-size: 2rem; }
 
 @media screen and (max-width: 1024px) {
   #services .container {
@@ -242,75 +239,118 @@ header {
     #services .container article div h4 {
       margin-bottom: 0.8rem; } }
 
-#projects .container-fluid {
-  width: 68%;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 2rem;
-  margin-left: 5%; }
-  #projects .container-fluid article {
-    background: #ffffff;
-    border-radius: 1rem;
-    box-shadow: 0 1.5rem 1.5rem rgba(12, 3, 27, 0.1);
-    position: relative;
-    transition: all 700ms ease; }
-    #projects .container-fluid article:hover {
-      box-shadow: none; }
-      #projects .container-fluid article:hover .specialist__image::before {
-        left: 0;
-        border-radius: 1rem; }
-    #projects .container-fluid article .specialist__image {
-      height: 20rem;
-      position: relative;
+#projects {
+  margin-top: 10rem;
+  width: 100vw;
+  text-align: center;
+  font-family: "Montserrat", sans-serif; }
+  #projects .container {
+    width: 68%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem; }
+    #projects .container article {
+      background: #ffffff;
       border-radius: 1rem;
-      overflow: hidden;
-      height: 100%; }
-      #projects .container-fluid article .specialist__image::before {
-        content: '';
-        display: block;
-        width: 100%;
-        height: 100%;
+      box-shadow: 0 1.5rem 1.5rem rgba(12, 3, 27, 0.1);
+      position: relative;
+      transition: all 700ms ease; }
+      #projects .container article:hover {
+        box-shadow: none; }
+        #projects .container article:hover .specialist__image::before {
+          left: 0;
+          border-radius: 1rem; }
+        #projects .container article:hover .specialist__socials, #projects .container article:hover .specialist__whatsapp {
+          opacity: 2;
+          visibility: visible;
+          transition: 0.8s; }
+      #projects .container article .specialist__image {
+        height: 50rem;
         position: relative;
-        top: 0;
-        left: 0;
-        left: -100%;
-        background: linear-gradient(135deg, rgba(72, 12, 168, 0.8), rgba(76, 201, 240, 0.8));
-        border-radius: 50%;
-        transition: all 1s ease; }
-    #projects .container-fluid article .specialist__details {
-      margin: 1.5rem 0;
-      text-align: center; }
-    #projects .container-fluid article .specialist__socials {
-      position: absolute;
-      top: 1.2rem;
-      right: 1.2rem;
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-      opacity: 0;
-      visibility: hidden;
-      transition: all 1s 400ms ease; }
-      #projects .container-fluid article .specialist__socials a {
-        background: #ffffff;
-        color: #480ca8;
-        padding: 0.4rem;
+        border-radius: 1rem;
+        overflow: hidden; }
+        #projects .container article .specialist__image::before {
+          content: '';
+          display: block;
+          width: 100%;
+          height: 100%;
+          position: relative;
+          top: 0;
+          left: 0;
+          left: -100%;
+          background: linear-gradient(135deg, rgba(72, 12, 168, 0.8), rgba(76, 201, 240, 0.8));
+          border-radius: 50%;
+          transition: all 1s ease; }
+      #projects .container article .specialist__details {
+        margin: 1.5rem 0;
+        text-align: center; }
+      #projects .container article .specialist__socials {
+        position: absolute;
+        top: 1.2rem;
+        right: 1.2rem;
         display: flex;
-        font-size: 0.8rem;
+        flex-direction: column;
+        gap: 1rem;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 1s 400ms ease; }
+        #projects .container article .specialist__socials a {
+          background: #ffffff;
+          color: #480ca8;
+          padding: 0.4rem;
+          display: flex;
+          font-size: 2.3rem;
+          border-radius: 50%;
+          transition: all 400ms ease; }
+          #projects .container article .specialist__socials a:hover {
+            background: #480ca8;
+            color: #ffffff; }
+      #projects .container article .specialist__whatsapp {
+        background: #54eb72;
+        color: #ffffff;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 30%;
+        padding: 1rem;
         border-radius: 50%;
-        transition: all 400ms ease; }
-        #projects .container-fluid article .specialist__socials a:hover {
-          background: #480ca8;
-          color: #ffffff; }
-    #projects .container-fluid article .specialist__whatsapp {
-      background: #54eb72;
-      color: #ffffff;
-      position: absolute;
-      left: 50%;
-      transform: translateX(-50%);
-      bottom: 30%;
-      padding: 1rem;
-      border-radius: 50%;
+        display: flex;
+        font-size: 2.8rem;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 1s 400ms; }
+
+@media screen and (max-width: 1024px) {
+  #projects .container {
+    grid-template-columns: 1fr 1fr; } }
+
+@media screen and (max-width: 600px) {
+  #projects .container {
+    grid-template-columns: 1fr; } }
+
+#testimonials {
+  width: 30%; }
+  #testimonials .swiper-wrapper article {
+    background: linear-gradient(135deg, #480ca8, #4cc9f0);
+    color: #ffffff;
+    padding: 1.5rem 2rem;
+    border-radius: 1rem;
+    cursor: default;
+    font-size: 0.9rem; }
+    #testimonials .swiper-wrapper article h1, #testimonials .swiper-wrapper article h2, #testimonials .swiper-wrapper article h3, #testimonials .swiper-wrapper article h4, #testimonials .swiper-wrapper article h5 {
+      color: #ffffff; }
+    #testimonials .swiper-wrapper article p {
+      margin-bottom: 1.5rem; }
+    #testimonials .swiper-wrapper article .patient {
       display: flex;
-      opacity: 0;
-      visibility: hidden;
-      transition: all 1s 400ms; }
+      align-items: center;
+      gap: 1rem; }
+      #testimonials .swiper-wrapper article .patient .avatar {
+        width: 2.5rem;
+        aspect-ratio: 1/1;
+        border-radius: 505;
+        overflow: hidden; }
+
+@media screen and (max-width: 600px) {
+  .swiper .swiper-wrapper .article {
+    padding: 1.5rem; } }
