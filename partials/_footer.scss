@@ -56,3 +56,37 @@ footer {
 
     }
 }
+
+
+// ============= MEDIA - MEDIUM DEVICES ===============
+
+@media screen and (max-width: 1024px){
+ footer {
+     .container {
+         gap: 2.5rem;
+     }
+ }
+}
+
+// ============= MEDIA - SMALL DEVICES ===============
+
+@media screen and (max-width: 600px){
+    footer {
+        .container {
+            grid-template-columns: 1fr;
+            text-align: center;
+
+            .btn-primary,
+            .footer__socials {
+                margin: 0 auto;
+            }
+
+            article {
+                & > div {
+                    justify-content: center;
+                }
+            }
+        }
+    }
+   }
+   

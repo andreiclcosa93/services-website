@@ -9,6 +9,13 @@ nav {
     box-shadow: 0 1rem 1rem rgba($black-color, 0.1);
 
 
+    
+        // navbar style on scroll using
+        &.window-scroll {
+            background: #fff;
+        }
+
+
     .container {
         display: flex;
         justify-content: space-between;
@@ -44,6 +51,7 @@ nav {
 
 @media screen and (max-width: 1024px){
     nav {
+
         .container {
             button {
                 display: inline-block;

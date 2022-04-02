@@ -18,7 +18,22 @@ closeNavBtn.addEventListener('click', closeNav);
 
 
 
+//effect navbar active for small device
 
+if(window.innerWidth < 1024) {
+    document.querySelectorAll('#nav__items li a').forEach(navItem => {
+        navItem.addEventListener('click', () => {
+            closeNav();
+        })
+    })
+}
+
+
+//change color scroll navbar
+
+window.addEventListener('scroll', () => {
+    document.querySelector('nav'),classList.toggle('window-scroll', window.scrollY > 0);
+})
 
 
 
