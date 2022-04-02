@@ -1,8 +1,10 @@
-#testimonials {
-    width: 30%;
+.swiper {
+   width: $container-lg;
+   
+    .swiper-wrapper { 
+        margin-bottom: 4rem;
 
-    .swiper-wrapper {
-        article {
+        .swiper-slide{
             @include gradientBackground;
             padding: 1.5rem 2rem;
             border-radius: 1rem;
@@ -27,6 +29,10 @@
            }
         }
     }
+
+    .swiper-pagination-bullet {
+        background: $primary-color;
+    }
 }
 
 
@@ -35,9 +41,10 @@
 @media screen and (max-width: 600px){
    .swiper {
        .swiper-wrapper  {
-           .article {
+           .swiper-slide {
                padding: 1.5rem;
            }
        }
    }
 }
+
